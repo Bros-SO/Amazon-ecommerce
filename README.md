@@ -427,3 +427,5 @@ $ npm start
      14. replace props.location.search with const { search } = useLocation(); and URLSearchParams
      15. replace props.match.path with const {pathname} = useLocation();
      16. put userInfo in useEffect in ChatBox, SupportScreen
+
+    ##### Note: This project is now registered with Hactoberfest2022 in support of open-source, Happy coding!
