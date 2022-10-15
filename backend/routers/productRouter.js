@@ -7,6 +7,7 @@ import { isAdmin, isAuth, isSellerOrAdmin } from '../utils.js';
 
 const productRouter = express.Router();
 
+//get all product route
 productRouter.get(
   '/',
   expressAsyncHandler(async (req, res) => {
@@ -60,6 +61,7 @@ productRouter.get(
   })
 );
 
+//get categories
 productRouter.get(
   '/categories',
   expressAsyncHandler(async (req, res) => {
@@ -68,6 +70,7 @@ productRouter.get(
   })
 );
 
+//get seed
 productRouter.get(
   '/seed',
   expressAsyncHandler(async (req, res) => {
@@ -88,6 +91,7 @@ productRouter.get(
   })
 );
 
+//get product by id
 productRouter.get(
   '/:id',
   expressAsyncHandler(async (req, res) => {
