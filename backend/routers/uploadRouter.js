@@ -15,6 +15,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
+//route to upload a file
 uploadRouter.post('/', isAuth, upload.single('image'), (req, res) => {
   res.send(`/${req.file.path}`);
 });

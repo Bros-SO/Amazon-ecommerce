@@ -429,3 +429,4 @@ $ npm start
      16. put userInfo in useEffect in ChatBox, SupportScreen
 
     ##### Note: This project is now registered with Hactoberfest2022 in support of open-source, Happy coding!
+    ###### kinldy see the CONTRIBUTING.md file for more info!
