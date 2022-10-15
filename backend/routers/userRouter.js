@@ -7,6 +7,7 @@ import { generateToken, isAdmin, isAuth } from '../utils.js';
 
 const userRouter = express.Router();
 
+//get top-sellers route
 userRouter.get(
   '/top-sellers',
   expressAsyncHandler(async (req, res) => {
@@ -17,6 +18,7 @@ userRouter.get(
   })
 );
 
+//get seed route
 userRouter.get(
   '/seed',
   expressAsyncHandler(async (req, res) => {
@@ -26,6 +28,7 @@ userRouter.get(
   })
 );
 
+//user sigin in route
 userRouter.post(
   '/signin',
   expressAsyncHandler(async (req, res) => {
@@ -47,6 +50,7 @@ userRouter.post(
   })
 );
 
+//user register route
 userRouter.post(
   '/register',
   expressAsyncHandler(async (req, res) => {
@@ -67,6 +71,7 @@ userRouter.post(
   })
 );
 
+//find user by id route
 userRouter.get(
   '/:id',
   expressAsyncHandler(async (req, res) => {
@@ -78,6 +83,8 @@ userRouter.get(
     }
   })
 );
+
+//update a user pofile route
 userRouter.put(
   '/profile',
   isAuth,
@@ -108,6 +115,7 @@ userRouter.put(
   })
 );
 
+//get usertype route
 userRouter.get(
   '/',
   isAuth,
@@ -118,6 +126,7 @@ userRouter.get(
   })
 );
 
+//delete user by id route
 userRouter.delete(
   '/:id',
   isAuth,
